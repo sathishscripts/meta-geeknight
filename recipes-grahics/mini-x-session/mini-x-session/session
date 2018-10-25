@@ -1,0 +1,4 @@
+# This resolution is big enough for hob2's max window size.
+xrandr -s 1024x600
+
+exec matchbox-window-manager -use_titlebar no -use_cursor no
