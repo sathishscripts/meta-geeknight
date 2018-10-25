@@ -1,4 +1,11 @@
 # This resolution is big enough for hob2's max window size.
 xrandr -s 1024x600
 
-exec matchbox-window-manager -use_titlebar no -use_cursor no
+
+for file in /etc/mini_x/apps/*
+do
+	source "$file"
+done
+
+
+exec matchbox-window-manager -use_titlebar no -use_cursor no 
